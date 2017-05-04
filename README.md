@@ -1,9 +1,9 @@
-#  TFTP on Linux
-
-## INSTALLATION INSTRUCTIONS
+# INSTALLATION INSTRUCTIONS
 ```bash
 sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eberswalde/tftp.git /var/lib/tftpboot && cd /var/lib/tftpboot/install && sh install.sh
 ```
+
+# HOW TOs
 
 ## How To (how i did it)
 * first followup: https://wiki.ubuntuusers.de/PXE-Installation/#DHCP-Proxy-mit-TFTP-Server
@@ -33,3 +33,6 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 * good workthrough with hosting preseed file via http-server: https://debian-administration.org/article/708/Automating_the_Debian_installer_with_PXE_and_preseeding
 * http://louwrentius.com/automated-install-of-debian-linux-based-on-pxe-net-booting.html
 * https://debian-administration.org/article/478/Setting_up_a_server_for_PXE_network_booting
+
+## systemd
+* https://unix.stackexchange.com/questions/126009/cause-a-script-to-execute-after-networking-has-started 
