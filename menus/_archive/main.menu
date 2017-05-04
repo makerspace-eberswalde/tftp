@@ -1,0 +1,11 @@
+meneu hshift 13
+menu width 49
+menu margin 8
+
+include menus/ubuntu-14.04-amd64/menu.cfg
+include menus/ubuntu-16.04-amd64/menu.cfg
+label preseed 
+	menu label ^Install from preseed
+	menu default
+	kernel distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.136:8080/preseeds/ubuntu-14.04-amd64.seed

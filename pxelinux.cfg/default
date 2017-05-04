@@ -1,0 +1,45 @@
+DISPLAY boot.txt
+TIMEOUT 10000
+PROMPT 0
+DEFAULT _display/vesamenu.c32
+
+MENU BEGIN UBUNTU 14.04 Manuell
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-14.04-amd64/menu.cfg
+MENU END
+MENU BEGIN UBUNTU 16.04 Manuell
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-16.04-amd64/menu.cfg
+MENU END
+MENU BEGIN UBUNTU 14.04 PRESEED
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-14.04-amd64/txt-preseed.cfg
+MENU END
+MENU BEGIN UBUNTU 16.04 PRESEED
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-16.04-amd64/txt-preseed.cfg
+MENU END
