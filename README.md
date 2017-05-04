@@ -1,3 +1,6 @@
+# TODO
+* docs: add system requirements (systemd)
+
 # INSTALLATION INSTRUCTIONS
 ```bash
 sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eberswalde/tftp.git /var/lib/tftpboot && cd /var/lib/tftpboot/install && sh install.sh

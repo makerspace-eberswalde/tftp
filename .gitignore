@@ -1,0 +1,8 @@
+node_modules/
+hapi/dist/
+express/dist/
+distros/
+
+*.swp
+*.swo
+*~
