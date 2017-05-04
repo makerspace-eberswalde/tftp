@@ -2,7 +2,7 @@
 
 ## INSTALLATION INSTRUCTIONS
 ```bash
-git clone https://github.com/makerspace-eberswalde/tftp.git /var/lib/tftpboot
+sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eberswalde/tftp.git /var/lib/tftpboot && cd /var/lib/tftpboot/install && sh install.sh
 ```
 
 ## How To (how i did it)
