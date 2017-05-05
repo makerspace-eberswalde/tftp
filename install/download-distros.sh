@@ -14,11 +14,11 @@ getOs() {
 # [RUN]
 cd /var/lib/tftpboot/distros
 
-VERSION=ubuntu-14.04-amd &&
+VERSION=ubuntu-14.04-amd64 &&
   FILENAME=netboot-$VERSION.tar.gz &&
   getOs $FILENAME $VERSION
 
-VERSION=ubuntu-16.04-amd &&
+VERSION=ubuntu-16.04-amd64 &&
   FILENAME=netboot-$VERSION.tar.gz &&
   getOs $FILENAME $VERSION &&
 
