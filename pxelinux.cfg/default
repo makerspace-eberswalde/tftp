@@ -3,7 +3,7 @@ TIMEOUT 10000
 PROMPT 0
 DEFAULT _display/vesamenu.c32
 
-MENU BEGIN UBUNTU 14.04 Manuell
+MENU BEGIN Ubuntu UNITY 14.04 (manuelle Installation)
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -11,9 +11,9 @@ MENU BEGIN UBUNTU 14.04 Manuell
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-14.04-amd64/menu.cfg
+	MENU INCLUDE menus/ubuntu-unity-14.04-amd64/menu.cfg
 MENU END
-MENU BEGIN UBUNTU 16.04 Manuell
+MENU BEGIN Ubuntu UNITY 14.04 (automatisierte Installation)
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -21,9 +21,9 @@ MENU BEGIN UBUNTU 16.04 Manuell
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-16.04-amd64/menu.cfg
+	MENU INCLUDE menus/ubuntu-14.04-amd64/txt-unity-preseed.cfg
 MENU END
-MENU BEGIN UBUNTU 14.04 PRESEED
+MENU BEGIN Ubuntu UNITY 16.04 (manuelle Installation)
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -31,9 +31,9 @@ MENU BEGIN UBUNTU 14.04 PRESEED
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-14.04-amd64/txt-preseed.cfg
+	MENU INCLUDE menus/ubuntu-unity-16.04-amd64/menu.cfg
 MENU END
-MENU BEGIN UBUNTU 16.04 PRESEED
+MENU BEGIN Ubuntu UNITY 16.04 (automatisierte Installation)
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -41,5 +41,55 @@ MENU BEGIN UBUNTU 16.04 PRESEED
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-16.04-amd64/txt-preseed.cfg
+	MENU INCLUDE menus/ubuntu-16.04-amd64/txt-unity-preseed.cfg
+MENU END
+MENU BEGIN Ubuntu UNITY 17.04 (manuelle Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-unity-17.04-amd64/menu.cfg
+MENU END
+MENU BEGIN Ubuntu UNITY 17.04 (automatisierte Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-17.04-amd64/txt-unity-preseed.cfg
+MENU END
+MENU BEGIN Ubuntu MATE 14.04 (automatisierte Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-14.04-amd64/txt-mate-preseed.cfg
+MENU END
+MENU BEGIN Ubuntu MATE 16.04 (automatisierte Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-16.04-amd64/txt-mate-preseed.cfg
+MENU END
+MENU BEGIN Ubuntu MATE 17.04 (automatisierte Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-17.04-amd64/txt-mate-preseed.cfg
 MENU END

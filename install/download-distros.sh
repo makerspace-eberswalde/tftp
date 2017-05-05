@@ -26,6 +26,10 @@ VERSION=ubuntu-16.10-i386 &&
   FILENAME=netboot-$VERSION.tar.gz &&
   getOs $FILENAME $VERSION &&
 
+VERSION=ubuntu-17.04-amd64 &&
+  FILENAME=netboot-$VERSION.tar.gz &&
+  getOs $FILENAME $VERSION &&
+
   # [MESSAGE]
 ls -lisa
 

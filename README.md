@@ -5,6 +5,20 @@
 ```bash
 sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eberswalde/tftp.git /var/lib/tftpboot && cd /var/lib/tftpboot/install && sh install.sh
 ```
+## FOLDERS
+* tftp: /var/lib/tftpboot
+* dnsmasq: /etc/dnsmasq.conf
+* syslinux: /usr/lib/syslinux (copy pxelinux.0 and vesainfo.c32 from here to /var/lib/tftpboot)
+
+## ADD DERIVATE OS
+* download distro and extract it to /var/lib/tftpboot/distros
+* create preseedfile and place it to /var/lib/tftpboot/http/preseeds
+* create new menu section in /var/lib/tftpboot/pxelinux.cfg/default
+* add new menu folder in /var/lib/tftpboot/menus for the specific distro
+* NAMING-CONVENTION: DERIVATE-VERSION-ARCHITECTURE (ubuntu-14.04-amd64)
+
+## ADD NEW OS
+* 
 
 # HOW TOs
 
@@ -21,11 +35,7 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 * pxe-boot: https://wiki.ubuntuusers.de/PXE-Boot/
 * multi image instructions: https://www.howtoforge.com/ubuntu_pxe_install_server_p3
 * https://blogging.dragon.org.uk/howto-setup-a-pxe-server-with-dnsmasq/
-
-## folders
-* tftp: /var/lib/tftpboot
-* dnsmasq: /etc/dnsmasq.conf
-* syslinux: /usr/lib/syslinux (copy pxelinux.0 and vesainfo.c32 from here to /var/lib/tftpboot)
+* lightweigth os: http://www.linuxandubuntu.com/home/5-lightweight-linux-for-old-computers
 
 ## TODO
 * ask Frank how he installed automatic run level for dnsmasq
@@ -36,6 +46,11 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 * good workthrough with hosting preseed file via http-server: https://debian-administration.org/article/708/Automating_the_Debian_installer_with_PXE_and_preseeding
 * http://louwrentius.com/automated-install-of-debian-linux-based-on-pxe-net-booting.html
 * https://debian-administration.org/article/478/Setting_up_a_server_for_PXE_network_booting
+* POSSIBLE UBUNTU DERIVATES: https://help.ubuntu.com/lts/installation-guide/i386/apbs04.html
 
 ## systemd
 * https://unix.stackexchange.com/questions/126009/cause-a-script-to-execute-after-networking-has-started 
+
+## Linux Desktop Environments
+* http://www.makeuseof.com/tag/gnome-based-desktop-environments-explained-mate-vs-gnome-shell-vs-unity-vs-cinnamon/
+* MINT VS UBUNTU: https://www.howtogeek.com/115041/htg-explains-whats-the-difference-between-ubuntu-linux-mint/
