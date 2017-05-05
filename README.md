@@ -39,6 +39,8 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 
 ## TODO
 * ask Frank how he installed automatic run level for dnsmasq
+* aks for encryption password: http://www.linuxjournal.com/content/preseeding-full-disk-encryption
+  * 
 
 # knowledge
 
@@ -54,3 +56,6 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 ## Linux Desktop Environments
 * http://www.makeuseof.com/tag/gnome-based-desktop-environments-explained-mate-vs-gnome-shell-vs-unity-vs-cinnamon/
 * MINT VS UBUNTU: https://www.howtogeek.com/115041/htg-explains-whats-the-difference-between-ubuntu-linux-mint/
+
+# IMAGES
+* ENCRYPTED: http://www.linuxjournal.com/content/preseeding-full-disk-encryption?page=0,1
