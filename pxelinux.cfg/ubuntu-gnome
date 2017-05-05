@@ -1,0 +1,31 @@
+default preseed-thin-17.04
+label preseed-thin-14.04
+	menu label ^Ubuntu GNOME 14.04 THIN (ohne vorinstallierte Software)
+	menu default
+	kernel distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-gnome-amd64-thin.seed
+label preseed-fat-14.04
+	menu label ^Ubuntu GNOME 14.04 FAT (mit vorinstallierter Software)
+	menu default
+	kernel distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-gnome-amd64-fat.seed
+label preseed-thin-16.04
+	menu label ^Ubuntu GNOME 16.04 THIN (ohne vorinstallierte Software)
+	menu default
+	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-gnome-amd64-thin.seed
+label preseed-fat-16.04
+	menu label ^Ubuntu GNOME 16.04 FAT (mit vorinstallierter Software)
+	menu default
+	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-gnome-amd64-fat.seed
+label preseed-thin-17.04
+	menu label ^Ubuntu GNOME 17.04 THIN (ohne vorinstallierte Software)
+	menu default
+	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-gnome-amd64-thin.seed
+label preseed-fat-17.04
+	menu label ^Ubuntu GNOME 17.04 FAT (mit vorinstallierter Software)
+	menu default
+	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-gnome-amd64-fat.seed

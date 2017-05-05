@@ -3,7 +3,7 @@ TIMEOUT 10000
 PROMPT 0
 DEFAULT _display/vesamenu.c32
 
-MENU BEGIN Ubuntu UNITY 14.04 (manuelle Installation)
+MENU BEGIN Ubuntu Unity (Standard Ubuntu)
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -11,9 +11,9 @@ MENU BEGIN Ubuntu UNITY 14.04 (manuelle Installation)
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-unity-14.04-amd64/menu.cfg
+	MENU INCLUDE pxelinux.cfg/ubuntu-unity
 MENU END
-MENU BEGIN Ubuntu UNITY 14.04 (automatisierte Installation)
+MENU BEGIN Ubuntu Mate
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -21,9 +21,9 @@ MENU BEGIN Ubuntu UNITY 14.04 (automatisierte Installation)
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-14.04-amd64/txt-unity-preseed.cfg
+	MENU INCLUDE pxelinux.cfg/ubuntu-mate
 MENU END
-MENU BEGIN Ubuntu UNITY 16.04 (manuelle Installation)
+MENU BEGIN Ubuntu Gnome
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -31,9 +31,9 @@ MENU BEGIN Ubuntu UNITY 16.04 (manuelle Installation)
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-unity-16.04-amd64/menu.cfg
+	MENU INCLUDE pxelinux.cfg/ubuntu-gnome
 MENU END
-MENU BEGIN Ubuntu UNITY 16.04 (automatisierte Installation)
+MENU BEGIN Lubuntu
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -41,9 +41,9 @@ MENU BEGIN Ubuntu UNITY 16.04 (automatisierte Installation)
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-16.04-amd64/txt-unity-preseed.cfg
+	MENU INCLUDE pxelinux.cfg/lubuntu
 MENU END
-MENU BEGIN Ubuntu UNITY 17.04 (manuelle Installation)
+MENU BEGIN Kbuntu
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -51,45 +51,5 @@ MENU BEGIN Ubuntu UNITY 17.04 (manuelle Installation)
 	ENDTEXT
 	MENU EXIT
 	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-unity-17.04-amd64/menu.cfg
-MENU END
-MENU BEGIN Ubuntu UNITY 17.04 (automatisierte Installation)
-	LABEL Previous
-	MENU LABEL Previous Menu
-	TEXT HELP
-	Return to previous menu
-	ENDTEXT
-	MENU EXIT
-	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-17.04-amd64/txt-unity-preseed.cfg
-MENU END
-MENU BEGIN Ubuntu MATE 14.04 (automatisierte Installation)
-	LABEL Previous
-	MENU LABEL Previous Menu
-	TEXT HELP
-	Return to previous menu
-	ENDTEXT
-	MENU EXIT
-	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-14.04-amd64/txt-mate-preseed.cfg
-MENU END
-MENU BEGIN Ubuntu MATE 16.04 (automatisierte Installation)
-	LABEL Previous
-	MENU LABEL Previous Menu
-	TEXT HELP
-	Return to previous menu
-	ENDTEXT
-	MENU EXIT
-	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-16.04-amd64/txt-mate-preseed.cfg
-MENU END
-MENU BEGIN Ubuntu MATE 17.04 (automatisierte Installation)
-	LABEL Previous
-	MENU LABEL Previous Menu
-	TEXT HELP
-	Return to previous menu
-	ENDTEXT
-	MENU EXIT
-	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-17.04-amd64/txt-mate-preseed.cfg
+	MENU INCLUDE pxelinux.cfg/kbuntu
 MENU END
