@@ -9,3 +9,8 @@ label preseed-fat-16.04
 	menu default
 	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
 	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-mate-amd64-fat.seed
+label preseed-thin-16.04-encrypted
+	menu label ^Ubuntu MATE 16.04 ENCRYPTED THIN
+	menu default
+	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-mate-amd64-thin-encrypted.seed
