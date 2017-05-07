@@ -2,11 +2,17 @@
 echo "\nSTART APACHE CONFIGURATION"
 echo "================================================================================"
 
+# [MESSAGE]
+echo "\nSTART apache tftp CONFIGURATION"
+echo "--------------------------------------------------------------------------------"
 # systemctl status apache2.service
 sudo rm -rf /etc/apache2/conf-enabled/tftp-apache.conf
 sudo ln -sf /var/lib/tftpboot/install/config/tftp-apache.conf /etc/apache2/conf-enabled/tftp-apache.conf
 sudo update-rc.d apache2 defaults
 ls -lisa /etc/apache2/conf-enabled
+# [MESSAGE]
+echo "\nDONE apche tftp CONFIGURATION"
+echo "--------------------------------------------------------------------------------"
 
 # [MESSAGE]
 echo "\nSTART /etc/hosts CONFIGURATION"
