@@ -12,10 +12,11 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 
 ## ADD DERIVATE OS
 * download distro and extract it to /var/lib/tftpboot/distros
-* create preseedfile and place it to /var/lib/tftpboot/http/preseeds
-* create new menu section in /var/lib/tftpboot/pxelinux.cfg/default
-* add new menu folder in /var/lib/tftpboot/menus for the specific distro
+* create preseedfile and place it to /var/lib/tftpboot/install/config/preseeds
+* create new menu section in /var/lib/tftpboot/install/config/pxelinux.cfg/default
+* add new menu folder in /var/lib/tftpboot/menus for the specific distro and adapt pathes
 * NAMING-CONVENTION: DERIVATE-VERSION-ARCHITECTURE (ubuntu-14.04-amd64)
+* run tftp.configure from terminal
 
 ## ADD NEW OS
 * 

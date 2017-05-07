@@ -53,3 +53,23 @@ MENU BEGIN Kbuntu
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/kbuntu
 MENU END
+MENU BEGIN Edubuntu
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/edubuntu
+MENU END
+MENU BEGIN Xubuntu
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/xubuntu
+MENU END

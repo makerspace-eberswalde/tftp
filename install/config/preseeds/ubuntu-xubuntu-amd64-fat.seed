@@ -170,14 +170,14 @@ d-i clock-setup/ntp-server ntp.home.lan
 # one disk the installer will default to using that, but otherwise the device
 # name must be given in traditional, non-devfs format (so e.g. /dev/hda or
 # /dev/sda, and not e.g. /dev/discs/disc0/disc).
-#d-i partman-auto/disk string /dev/sda
+d-i partman-auto/disk string /dev/sda
 
 # In addition, you'll need to specify the method to use.
 # The presently available methods are:
 # - regular: use the usual partition types for your architecture
 # - lvm:     use LVM to partition the disk
 # - crypto:  use LVM within an encrypted partition
-d-i partman-auto/method string crypto
+d-i partman-auto/method string regular
 
 # If one of the disks that are going to be automatically partitioned
 # contains an old LVM configuration, the user will normally receive a
@@ -197,8 +197,6 @@ d-i partman-lvm/confirm boolean true
 #d-i partman-auto-lvm/guided_size string max
 #d-i partman-auto-lvm/guided_size string 10GB
 #d-i partman-auto-lvm/guided_size string 50%
-d-i partman-auto-lvm/guided_size string max
-d-i partman-auto-lvm/new_vg_name string crypt
 
 # You can choose one of the three predefined partitioning recipes:
 # - atomic: all files in one partition
@@ -230,38 +228,30 @@ d-i partman-auto-lvm/new_vg_name string crypt
 #        64 512 300% linux-swap                   \
 #            method{ swap } format{ }             \
 #        .
-#d-i partman-auto/expert_recipe string            \
-    #boot-root ::                                 \
+d-i partman-auto/expert_recipe string            \
+    boot-root ::                                 \
 # swap with at least 2GB, maximum size of memory
-        #2048 500 100% linux-swap                 \
-            #$primary{ }                          \
-            #method{ swap } format{ }             \
-        #.                                        \
+        2048 500 100% linux-swap                 \
+            $primary{ }                          \
+            method{ swap } format{ }             \
+        .                                        \
 # / with at least 20GB, maximum 40GB, and ext4
-        #20480 1000 40960 ext4                    \
-            #$primary{ } $bootable{ }             \
-            #method{ format } format{ }           \
-            #use_filesystem{ } filesystem{ ext4 } \
-            #mountpoint{ / }                      \
-        #.                                        \
+        20480 1000 40960 ext4                    \
+            $primary{ } $bootable{ }             \
+            method{ format } format{ }           \
+            use_filesystem{ } filesystem{ ext4 } \
+            mountpoint{ / }                      \
+        .                                        \
 # /home with at least 20GB, maximum rest of space, and ext4
-        #20480 1000 1000000000 ext4               \
-            #method{ format } format{ }           \
-            #use_filesystem{ } filesystem{ ext4 } \
-            #mountpoint{ /home }                  \
-        #.
-
-2000 2000 2000 linux-swap                       \
-        $lvmok{ } lv_name{ swap }               \
-        in_vg { crypt }                         \
-. . .
-500 10000 1000000000 ext4                       \
-        $lvmok{ } lv_name{ root }               \
-        in_vg { crypt }                         \
+        20480 1000 1000000000 ext4               \
+            method{ format } format{ }           \
+            use_filesystem{ } filesystem{ ext4 } \
+            mountpoint{ /home }                  \
+        .
 
 # If you just want to change the default filesystem from ext3 to something
 # else, you can do that without providing a full recipe.
-#d-i partman/default_filesystem string ext4
+d-i partman/default_filesystem string ext4
 
 # The full recipe format is documented in the file partman-auto-recipe.txt
 # included in the 'debian-installer' package or available from D-I source
@@ -368,12 +358,12 @@ d-i passwd/root-login boolean false
 #d-i passwd/root-password-crypted password $1$ZGW8Hqa4$L0ENJjVIrAxTXIBmGtv5C/
 
 # To create a normal user account.
-#d-i passwd/user-fullname string Makerspace Eberswalde
-#d-i passwd/username string mkrspcebw
+d-i passwd/user-fullname string Makerspace Eberswalde
+d-i passwd/username string mkrspcebw
 
 # Normal user's password, either in clear text
-#d-i passwd/user-password password pw 
-#d-i passwd/user-password-again password pw 
+d-i passwd/user-password password pw 
+d-i passwd/user-password-again password pw 
 
 # or encrypted using an MD5 hash.
 #d-i passwd/user-password-crypted password [MD5 hash]
@@ -389,15 +379,15 @@ d-i passwd/root-login boolean false
 
 # The installer will warn about weak passwords. If you are sure you know
 # what you're doing and want to override it, uncomment this.
-#d-i user-setup/allow-password-weak boolean true
+d-i user-setup/allow-password-weak boolean true
 
 # The user account will be added to some standard initial groups. To
 # override that, use this.
 #d-i passwd/user-default-groups string audio cdrom video
 
 # Set to true if you want to encrypt the first user's home directory.
-#d-i user-setup/encrypt-home boolean false
-d-i user-setup/encrypt-home boolean true
+d-i user-setup/encrypt-home boolean false
+#d-i user-setup/encrypt-home boolean true
 
 ################################################################################
 ### Apt setup                                                                ###
@@ -439,14 +429,26 @@ d-i user-setup/encrypt-home boolean true
 ### Package selection                                                        ###
 ################################################################################
 # Selected packages.
-tasksel tasksel/first multiselect ubuntu-mate-desktop
 #tasksel tasksel/first multiselect lamp-server, print-server
-#tasksel tasksel/first multiselect kubuntu-desktop
+tasksel tasksel/first multiselect xubuntu-desktop
 
 # Individual additional packages to install
 #d-i pkgsel/include string openssh-server build-essential
 d-i pkgsel/include string      \
-    wget
+    openssh-server             \
+    firefox-locale-de          \
+    libreoffice-l10n-de        \
+    libreoffice-help-de        \
+    openjdk-6-jre              \
+    nmap                       \
+    tree                       \
+    curl                       \
+    wget                       \
+    htop                       \
+    git                        \
+    ruby                       \
+    gem                        \
+    iptraf
 
 # Whether to upgrade packages after debootstrap.
 # Allowed values: none, safe-upgrade, full-upgrade
@@ -606,4 +608,4 @@ xserver-xorg xserver-xorg/config/monitor/mode-list select 1024x768 @ 60 Hz
     # in-target sed -i 's/http:\/\/mirror/ftp:\/\/mirror/g' /etc/apt/sources.list
     # d-i preseed/late_command string apt-install zsh; in-target chsh -s /bin/zsh
 #d-i preseed/late_command string \
-	#in-target wget --no-cache -O /home/user/mkrspcebw/postinstall.sh http://192.168.178.195:80/tftp/scripts/postinstall.sh
+	#in-target wget --no-cache -O /home/user/mkrspcebw/postinstall.sh http://ADAPT_IP_HERE:80/tftp/scripts/postinstall.sh

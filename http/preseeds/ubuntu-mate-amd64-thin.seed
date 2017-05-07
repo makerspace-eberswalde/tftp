@@ -596,4 +596,4 @@ xserver-xorg xserver-xorg/config/monitor/mode-list select 1024x768 @ 60 Hz
     # in-target sed -i 's/http:\/\/mirror/ftp:\/\/mirror/g' /etc/apt/sources.list
     # d-i preseed/late_command string apt-install zsh; in-target chsh -s /bin/zsh
 #d-i preseed/late_command string \
-	#in-target wget --no-cache -O /home/user/mkrspcebw/postinstall.sh http://192.168.178.186:80/tftp/scripts/postinstall.sh
+	#in-target wget --no-cache -O /home/user/mkrspcebw/postinstall.sh http://192.168.178.195:80/tftp/scripts/postinstall.sh
