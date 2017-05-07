@@ -1,20 +1,5 @@
-# [MESSAGE]
-echo "\nSTART TFTP-INSTALLATION"
-echo "================================================================================"
-
-#sudo apt-get update &> /dev/null &&
-
-# [MESSAGE]
-echo "\nSTART dnsmasq INSTALLATION"
-echo "--------------------------------------------------------------------------------"
-# TODO: install dnsmasq
-sudo apt-get install -y dnsmasq &&
-
-echo "\nSTART apache2 INSTALLATION"
-echo "--------------------------------------------------------------------------------"
-# TODO: install apache2/http-server
-sudo apt-get install -y apache2 &&
-
-# [MESSAGE]
-echo "\nDONE TFTP-INSTALLATION"
-echo "================================================================================"
+sh /var/lib/tftpboot/install/script-install-software.sh &&
+  sh /var/lib/tftpboot/install/script-configure-dnsmasq.sh &&
+  sh /var/lib/tftpboot/install/script-configure-apache.sh &&
+  sh /var/lib/tftpboot/install/script-restart-services.sh &&
+  sh /var/lib/tftpboot/install/script-download-distros.sh
