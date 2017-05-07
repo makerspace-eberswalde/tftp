@@ -1,0 +1,61 @@
+default preseed-thin-17.04
+label preseed-thin-14.04
+	menu label ^Ubuntu UNITY 14.04 THIN (ohne vorinstallierte Software)
+	menu default
+	kernel distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-thin.seed
+label preseed-fat-14.04
+	menu label ^Ubuntu UNITY 14.04 FAT (mit vorinstallierter Software)
+	menu default
+	kernel distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-fat.seed
+label preseed-thin-16.04
+	menu label ^Ubuntu UNITY 16.04 THIN (ohne vorinstallierte Software)
+	menu default
+	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-thin.seed
+label preseed-fat-16.04
+	menu label ^Ubuntu UNITY 16.04 FAT (mit vorinstallierter Software)
+	menu default
+	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-fat.seed
+label preseed-thin-17.04
+	menu label ^Ubuntu UNITY 17.04 THIN (ohne vorinstallierte Software)
+	menu default
+	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-thin.seed
+label preseed-fat-17.04
+	menu label ^Ubuntu UNITY 17.04 FAT (mit vorinstallierter Software)
+	menu default
+	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-fat.seed
+MENU BEGIN Ubuntu UNITY 14.04 (manuelle Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-unity-14.04-amd64/menu.cfg
+MENU END
+MENU BEGIN Ubuntu UNITY 16.04 (manuelle Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-unity-16.04-amd64/menu.cfg
+MENU END
+MENU BEGIN Ubuntu UNITY 17.04 (manuelle Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-unity-17.04-amd64/menu.cfg
+MENU END

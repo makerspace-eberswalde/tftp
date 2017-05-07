@@ -1,0 +1,55 @@
+DISPLAY boot.txt
+TIMEOUT 10000
+PROMPT 0
+DEFAULT _display/vesamenu.c32
+
+MENU BEGIN Ubuntu Unity (Standard Ubuntu)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/ubuntu-unity
+MENU END
+MENU BEGIN Ubuntu Mate
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/ubuntu-mate
+MENU END
+MENU BEGIN Ubuntu Gnome
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/ubuntu-gnome
+MENU END
+MENU BEGIN Lubuntu
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/lubuntu
+MENU END
+MENU BEGIN Kbuntu
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/kbuntu
+MENU END
