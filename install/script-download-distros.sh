@@ -18,7 +18,15 @@ VERSION=ubuntu-14.04-amd64 &&
   FILENAME=netboot-$VERSION.tar.gz &&
   getOs $FILENAME $VERSION
 
+VERSION=ubuntu-14.04-i386 &&
+  FILENAME=netboot-$VERSION.tar.gz &&
+  getOs $FILENAME $VERSION
+
 VERSION=ubuntu-16.04-amd64 &&
+  FILENAME=netboot-$VERSION.tar.gz &&
+  getOs $FILENAME $VERSION &&
+
+VERSION=ubuntu-16.04-i386 &&
   FILENAME=netboot-$VERSION.tar.gz &&
   getOs $FILENAME $VERSION &&
 
@@ -27,6 +35,10 @@ VERSION=ubuntu-16.10-i386 &&
   getOs $FILENAME $VERSION &&
 
 VERSION=ubuntu-17.04-amd64 &&
+  FILENAME=netboot-$VERSION.tar.gz &&
+  getOs $FILENAME $VERSION &&
+
+VERSION=ubuntu-17.04-i386 &&
   FILENAME=netboot-$VERSION.tar.gz &&
   getOs $FILENAME $VERSION &&
 

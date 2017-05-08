@@ -43,7 +43,7 @@ MENU BEGIN Lubuntu
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/lubuntu
 MENU END
-MENU BEGIN Kbuntu
+MENU BEGIN X Kbuntu
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -52,4 +52,35 @@ MENU BEGIN Kbuntu
 	MENU EXIT
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/kbuntu
+MENU END
+MENU BEGIN X Edubuntu
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/edubuntu
+MENU END
+MENU BEGIN X Xubuntu
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/xubuntu
+MENU END
+
+MENU BEGIN Ubuntu UNITY 17.04 i386 (manuelle Installation)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/ubuntu-17.04-i386/menu.cfg
 MENU END

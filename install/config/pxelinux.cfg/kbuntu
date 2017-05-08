@@ -1,21 +1,13 @@
-default preseed-thin-16.04
-label preseed-thin-16.04
-	menu label ^Ubuntu KBUNTU 16.04 THIN (ohne vorinstallierte Software)
+default preseed-thin-16.04-i386
+
+label preseed-thin-16.04-i386
+	menu label ^Kbuntu 16.04 i386
+	menu default
+	kernel distros/ubuntu-16.04-i386/ubuntu-installer/i386/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-thin.seed
+
+label preseed-thin-16.04-amd64
+	menu label ^Kbuntu 16.04 amd64
 	menu default
 	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
-	arppend auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-amd64-thin.seed
-label preseed-fat-16.04
-	menu label ^Ubuntu KBUNTU 16.04 FAT (mit vorinstallierter Software)
-	menu default
-	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-amd64-fat.seed
-label preseed-thin-17.04
-	menu label ^Ubuntu KBUNTU 17.04 THIN (ohne vorinstallierte Software)
-	menu default
-	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
-	arppend auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-amd64-thin.seed
-label preseed-fat-17.04
-	menu label ^Ubuntu KBUNTU 17.04 FAT (mit vorinstallierter Software)
-	menu default
-	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-amd64-fat.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-thin.seed

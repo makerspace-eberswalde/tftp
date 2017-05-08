@@ -33,6 +33,7 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 * Appendix B. Automating the installation using preseeding https://help.ubuntu.com/lts/installation-guide/i386/apb.html
 * preseed example file: https://www.debian.org/releases/wheezy/example-preseed.txt
 * netboot: https://help.ubuntu.com/community/Installation/Netboot
+* netboot downloads ubuntu: http://cdimage.ubuntu.com/netboot/
 * pxe-boot: https://wiki.ubuntuusers.de/PXE-Boot/
 * multi image instructions: https://www.howtoforge.com/ubuntu_pxe_install_server_p3
 * https://blogging.dragon.org.uk/howto-setup-a-pxe-server-with-dnsmasq/
@@ -41,7 +42,6 @@ sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eb
 ## TODO
 * ask Frank how he installed automatic run level for dnsmasq
 * aks for encryption password: http://www.linuxjournal.com/content/preseeding-full-disk-encryption
-  * 
 
 # knowledge
 
