@@ -11,7 +11,8 @@ sudo sed -i -e 's/ADAPT_IP_HERE/'$IP'/g' /etc/dnsmasq.conf
 sudo cp -f /var/lib/tftpboot/install/config/dnsmasq.service /lib/systemd/system
 sudo cp -f /var/lib/tftpboot/install/config/dnsmasq /etc/init.d
 sudo systemctl enable NetworkManager-wait-online.service
-cat /etc/dnsmasq.conf
+cat /etc/dnsmasq.conf &&
+sudo service dnsmasq restart
 # [MESSAGE]
 echo "\nDONE dnsmasq CONFIGURATION"
 echo "================================================================================"

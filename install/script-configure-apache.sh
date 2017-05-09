@@ -18,7 +18,7 @@ echo "--------------------------------------------------------------------------
 echo "\nSTART /etc/hosts CONFIGURATION"
 echo "--------------------------------------------------------------------------------"
 # systemctl status apache2.service
-#sudo echo "127.0.1.1	tftp-server" >> /etc/hosts
+#sudo echo "127.0.1.1 tftp-server" >> /etc/hosts
 echo '127.0.1.1 tftp.server' | sudo tee -a /etc/hosts
 #echo '192.168.178.186 tftp-server' | sudo tee -a /etc/hosts
 sort /etc/hosts | sudo uniq | sudo tee /etc/hosts-new
@@ -28,6 +28,8 @@ sudo rm -f /etc/hosts-new
 echo "\nDONE /etc/hosts CONFIGURATION"
 echo "--------------------------------------------------------------------------------"
 
-# [MESSAGE]
+sudo service apache2 restart &&
+
+  # [MESSAGE]
 echo "\nDONE APACHE CONFIGURATION"
 echo "================================================================================"

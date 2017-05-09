@@ -43,7 +43,7 @@ MENU BEGIN Lubuntu
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/lubuntu
 MENU END
-MENU BEGIN X Kbuntu
+MENU BEGIN Kbuntu
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -72,15 +72,4 @@ MENU BEGIN X Xubuntu
 	MENU EXIT
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/xubuntu
-MENU END
-
-MENU BEGIN Ubuntu UNITY 17.04 i386 (manuelle Installation)
-	LABEL Previous
-	MENU LABEL Previous Menu
-	TEXT HELP
-	Return to previous menu
-	ENDTEXT
-	MENU EXIT
-	MENU SEPARATOR
-	MENU INCLUDE menus/ubuntu-17.04-i386/menu.cfg
 MENU END
