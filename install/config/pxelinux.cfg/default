@@ -53,7 +53,17 @@ MENU BEGIN Kbuntu
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/kbuntu
 MENU END
-MENU BEGIN X Edubuntu
+MENU BEGIN [TODO] Mint
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/mint
+MENU END
+MENU BEGIN [TODO] Edubuntu
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -63,7 +73,7 @@ MENU BEGIN X Edubuntu
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/edubuntu
 MENU END
-MENU BEGIN X Xubuntu
+MENU BEGIN [TODO] Xubuntu
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
