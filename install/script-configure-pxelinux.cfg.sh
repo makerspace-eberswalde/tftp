@@ -5,7 +5,7 @@ echo $IP
 # [MESSAGE]
 echo "\nSTART pxelinux.cfg CONFIGURATION"
 echo "================================================================================"
-sudo rm -rf /var/lib/tftpboot/pxelinux.cfg
+sudo find /var/lib/tftpboot/pxelinux.cfg -not -name '.gitkeep' -print0 | xargs -0 rm -rf --
 sudo cp -rf /var/lib/tftpboot/install/config/pxelinux.cfg /var/lib/tftpboot
 find /var/lib/tftpboot/pxelinux.cfg -type f -exec sudo sed -i 's/ADAPT_IP_HERE/'$IP'/g' {} +
 # [MESSAGE]
