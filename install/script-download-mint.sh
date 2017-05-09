@@ -16,8 +16,10 @@ getOsMint() {
 	cd ..
 }
 
+sudo mkdir -p /var/lib/tftpboot/distros/mint
 cd /var/lib/tftpboot/distros/mint
 
-VERSION=linuxmint-18.1-mate-32bit &&
+#VERSION=linuxmint-18.1-mate-32bit &&
+VERSION=linuxmint-18.1-cinnamon-64bit &&
 	DOWNLOADPATH=http://ftp.fau.de/mint/iso/linuxmint.com/stable/18.1/$VERSION.iso &&
 	getOsMint $VERSION $DOWNLOADPATH
