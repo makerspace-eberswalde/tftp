@@ -23,7 +23,7 @@ sudo apt-get install -y p7zip-full p7zip-rar &&
 echo "\nSTART nfs-kernel-server INSTALLATION"
 echo "--------------------------------------------------------------------------------"
 # install nfs server for serving images over network
-sudo apt-get -y install nfs-kernel-server 
+sudo apt-get install -y nfs-kernel-server 
 
 # [MESSAGE]
 echo "\nDONE TFTP-INSTALLATION"
