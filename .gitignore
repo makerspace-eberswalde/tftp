@@ -2,7 +2,7 @@ node_modules/
 hapi/dist/
 express/dist/
 distros/
-pxelinunx.cfg/
+pxelinux.cfg/
 http/preseeds/
 
 *.swp
