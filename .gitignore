@@ -1,6 +1,7 @@
 distros/
 pxelinux.cfg/
 http/preseeds/
+!install/config/pxelinux.cfg/
 
 *.swp
 *.swo
