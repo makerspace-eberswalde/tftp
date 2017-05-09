@@ -3,19 +3,19 @@ label preseed-thin-16.04
 	menu label ^Ubuntu EDUBUNTU 16.04 THIN (ohne vorinstallierte Software)
 	menu default
 	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
-	arppend auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-edubuntu-amd64-thin.seed
+	arppend auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.10:80/tftp/preseeds/ubuntu-edubuntu-amd64-thin.seed
 label preseed-fat-16.04
 	menu label ^Ubuntu EDUBUNTU 16.04 FAT (mit vorinstallierter Software)
 	menu default
 	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-edubuntu-amd64-fat.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.10:80/tftp/preseeds/ubuntu-edubuntu-amd64-fat.seed
 label preseed-thin-17.04
 	menu label ^Ubuntu EDUBUNTU 17.04 THIN (ohne vorinstallierte Software)
 	menu default
 	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
-	arppend auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-edubuntu-amd64-thin.seed
+	arppend auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.10:80/tftp/preseeds/ubuntu-edubuntu-amd64-thin.seed
 label preseed-fat-17.04
 	menu label ^Ubuntu EDUBUNTU 17.04 FAT (mit vorinstallierter Software)
 	menu default
 	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.186:80/tftp/preseeds/ubuntu-edubuntu-amd64-fat.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://192.168.178.10:80/tftp/preseeds/ubuntu-edubuntu-amd64-fat.seed
