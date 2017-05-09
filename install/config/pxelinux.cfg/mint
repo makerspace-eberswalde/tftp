@@ -3,4 +3,4 @@ DEFAULT Linux-Mint-18.1
 LABEL Linux-Mint-18.1
 MENU LABEL Linux-Mint-18.1
 KERNEL distros/mint/vmlinuz
-APPEND boot=casper netboot=nfs nfsroot=http://ADAPT_IP_HERE:80/tftp/preseeds/mint.seed initrd=distros/mint/linuxmint-18.1-mate-32bit/casper/initrd.lz splash --
+APPEND boot=casper netboot=nfs nfsroot=http://ADAPT_IP_HERE:80/tftp/preseeds/mint.seed initrd=distros/mint/linuxmint-18.1-mate-32bit/casper/initrd.lz nosplash --
