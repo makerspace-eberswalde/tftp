@@ -1,13 +1,41 @@
-DEFAULT kali-2017.1-64bit-unattended-manually-new
- 
-LABEL kali-2017.1-64bit-unattended
-MENU LABEL [todo] Kali 2017.01 (64bit) unattended
-KERNEL distros/kali/kali-linux-2017.1-amd64/install/vmlinuz
-INITRD distros/kali/kali-linux-2017.1-amd64/install/initrd.gz
-APPEND boot=live netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/kali/kali-linux-2017.1-amd64/live
+DEFAULT kali-install-netboot-manual
 
-LABEL kali-2017.1-64bit-manually-new
-MENU LABEL [todo] Kali 2017.01 (64bit) manually new
-KERNEL distros/kali/kali-linux-2017.1-amd64/install/vmlinuz
-INITRD distros/kali/kali-linux-2017.1-amd64/install/initrd.gz
-APPEND boot=live components fetch=tftp://ADAPT_IP_HERE//tftpboot/distros/kali/kali-linux-2017.1-amd64/live/filesystem.squashfs
+LABEL kali-install-netboot-manual
+	MENU label ^Install Manuell
+	KERNEL distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/linux
+	APPEND vga=788 initrd=distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/initrd.gz
+
+LABEL kali-install-netboot-unattended
+	MENU label ^Install Unattended
+	KERNEL distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/linux
+	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/kali-thin.seed
+
+LABEL kali-live
+MENU LABEL Kali Live Boot
+KERNEL distros/kali/kali-linux-2017.1-amd64/live/vmlinuz
+INITRD distros/kali/kali-linux-2017.1-amd64/live/initrd.img
+APPEND boot=live netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/kali/kali-linux-2017.1-amd64 noconfig=sudo username=root hostname=kali
+
+MENU SEPARATOR
+
+MENU BEGIN Kali 2017.1 Original
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/kali-linux-2017.1-amd64/install.cfg
+MENU END
+
+MENU BEGIN Kali 2016.2 Netboot Original
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE menus/kali-netboot/menu.cfg
+MENU END
