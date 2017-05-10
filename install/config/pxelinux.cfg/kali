@@ -1,0 +1,13 @@
+DEFAULT kali-2017.1-64bit-unattended-manually-new
+ 
+LABEL kali-2017.1-64bit-unattended
+MENU LABEL [todo] Kali 2017.01 (64bit) unattended
+KERNEL distros/kali/kali-linux-2017.1-amd64/install/vmlinuz
+INITRD distros/kali/kali-linux-2017.1-amd64/install/initrd.gz
+APPEND boot=live netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/kali/kali-linux-2017.1-amd64/live
+
+LABEL kali-2017.1-64bit-manually-new
+MENU LABEL [todo] Kali 2017.01 (64bit) manually new
+KERNEL distros/kali/kali-linux-2017.1-amd64/install/vmlinuz
+INITRD distros/kali/kali-linux-2017.1-amd64/install/initrd.gz
+APPEND boot=live components fetch=tftp://ADAPT_IP_HERE//tftpboot/distros/kali/kali-linux-2017.1-amd64/live/filesystem.squashfs

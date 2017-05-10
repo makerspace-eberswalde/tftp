@@ -53,6 +53,16 @@ MENU BEGIN Kbuntu
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/kbuntu
 MENU END
+MENU BEGIN [TODO] Kali
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/kali
+MENU END
 MENU BEGIN [TODO] Mint
 	LABEL Previous
 	MENU LABEL Previous Menu
