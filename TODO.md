@@ -15,6 +15,3 @@
 * redhat
 * windows server
 * try to use in virtual box
-
-= KALI =
-* http://docs.kali.org/installation/kali-linux-network-pxe-install
