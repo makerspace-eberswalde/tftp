@@ -2,13 +2,13 @@ DEFAULT kali-install-netboot-manual
 
 LABEL kali-install-netboot-manual
 	MENU label ^Install Manuell
-	KERNEL distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/linux
-	APPEND vga=788 initrd=distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/initrd.gz
+	KERNEL distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/linux
+	APPEND vga=788 initrd=distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/initrd.gz
 
 LABEL kali-install-netboot-unattended
 	MENU label ^Install Unattended
-	KERNEL distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/linux
-	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-linux-2016.2-amd64/debian-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/kali-thin.seed
+	KERNEL distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/linux
+	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/kali-thin.seed
 
 LABEL kali-live
 MENU LABEL Kali Live Boot
@@ -27,15 +27,4 @@ MENU BEGIN Kali 2017.1 Original
 	MENU EXIT
 	MENU SEPARATOR
 	MENU INCLUDE menus/kali-linux-2017.1-amd64/install.cfg
-MENU END
-
-MENU BEGIN Kali 2016.2 Netboot Original
-	LABEL Previous
-	MENU LABEL Previous Menu
-	TEXT HELP
-	Return to previous menu
-	ENDTEXT
-	MENU EXIT
-	MENU SEPARATOR
-	MENU INCLUDE menus/kali-netboot/menu.cfg
 MENU END

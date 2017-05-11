@@ -11,6 +11,10 @@ getOs() {
   fi
 }
 
+# [MESSAGE]
+echo "\nSTART DONWLOAD UBUNTU"
+echo "================================================================================"
+
 # [RUN]
 cd /var/lib/tftpboot/distros
 
@@ -45,5 +49,6 @@ VERSION=ubuntu-17.04-i386 &&
   # [MESSAGE]
 ls -lisa
 
-echo "\n DONE"
-echo "--------------------------------------------------------------------------------"
+# [MESSAGE]
+echo "\nDONE DONWLOAD UBUNTU"
+echo "================================================================================"
