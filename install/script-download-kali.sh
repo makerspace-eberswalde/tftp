@@ -25,8 +25,7 @@ getOsNetboot() {
       sudo wget https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/os/$FILE &&
       sudo rm -rf $VERSION &&
       sudo mkdir $VERSION &&
-      sudo tar -xvzf $FILE -C $VERSION &&
-      sudo rm -rf $FILE
+      sudo tar -xvzf $FILE -C $VERSION
   fi
 }
 # [MESSAGE]
@@ -47,15 +46,14 @@ VERSION="2017.1" &&
 
 # NETBOOT IMAGES
 
-VERSION=kali-2016.2-amd64 &&
-  FILENAME=netboot-$VERSION.tar.gz &&
+VERSION=netboot-kali-2016.2-amd64 &&
+  FILENAME=$VERSION.tar.gz &&
   getOsNetboot $FILENAME $VERSION
 
-VERSION=kali-2016.2-i386 &&
-  FILENAME=netboot-$VERSION.tar.gz &&
+VERSION=netboot-kali-2016.2-i386 &&
+  FILENAME=$VERSION.tar.gz &&
   getOsNetboot $FILENAME $VERSION
 
 # [MESSAGE]
 echo "\nDONE DONWLOAD KALI"
 echo "================================================================================"
-
