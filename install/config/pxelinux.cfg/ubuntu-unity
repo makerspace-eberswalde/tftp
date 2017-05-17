@@ -1,4 +1,19 @@
 default preseed-thin-17.04
+
+label preseed-thin-17.04-encrypted
+	menu label ^Ubuntu Unity 17.04 ENCRYPTED THIN (own user)
+	menu default
+	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-thin-encrypted.seed
+
+label preseed-thin-17.04-encrypted
+	menu label ^Ubuntu Unity 17.04 ENCRYPTED FAT (own user; wget, tree, curl, htop, git, mc )
+	menu default
+	kernel distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/linux
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-thin-encrypted.seed
+
+MENU SEPARATOR
+
 label preseed-thin-14.04
 	menu label ^Ubuntu UNITY 14.04 THIN (ohne vorinstallierte Software)
 	menu default
