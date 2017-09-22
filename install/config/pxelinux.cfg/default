@@ -3,7 +3,7 @@ TIMEOUT 10000
 PROMPT 0
 DEFAULT _display/vesamenu.c32
 
-MENU BEGIN Ubuntu Unity (Standard Ubuntu)
+MENU BEGIN Ubuntu Unity amd64 (Standard Ubuntu)
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -12,6 +12,16 @@ MENU BEGIN Ubuntu Unity (Standard Ubuntu)
 	MENU EXIT
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/ubuntu-unity
+MENU END
+MENU BEGIN Ubuntu Unity i386 (Standard Ubuntu)
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/ubuntu-unity-i386
 MENU END
 MENU BEGIN Ubuntu Mate
 	LABEL Previous
@@ -23,7 +33,7 @@ MENU BEGIN Ubuntu Mate
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/ubuntu-mate
 MENU END
-MENU BEGIN Ubuntu Gnome
+MENU BEGIN Ubuntu Gnome amd64
 	LABEL Previous
 	MENU LABEL Previous Menu
 	TEXT HELP
@@ -32,6 +42,16 @@ MENU BEGIN Ubuntu Gnome
 	MENU EXIT
 	MENU SEPARATOR
 	MENU INCLUDE pxelinux.cfg/ubuntu-gnome
+MENU END
+MENU BEGIN Ubuntu Gnome i386
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+	MENU INCLUDE pxelinux.cfg/ubuntu-gnome-i386
 MENU END
 MENU BEGIN Lubuntu
 	LABEL Previous
