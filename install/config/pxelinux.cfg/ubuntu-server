@@ -1,0 +1,8 @@
+default 18.04
+
+label 18.04
+	menu label Ubuntu Server 18.04
+	menu default
+	kernel distros/ubuntu-18.04-server/
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-amd64-thin-encrypted-no-partman.seed
+

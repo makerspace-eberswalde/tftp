@@ -1,6 +1,20 @@
 # TODO
 * docs: add system requirements (systemd)
 
+# PREPARE
+```
+# install nodejs
+npm install -g http-server
+```
+
+# START
+```
+ tftp.configure
+ tftp.services.restart
+ tftp.start.preseed-http-server
+```
+
+
 # INSTALLATION INSTRUCTIONS
 ```bash
 sudo rm -rf /var/lib/tftpboot && sudo git clone https://github.com/makerspace-eberswalde/tftp.git /var/lib/tftpboot && cd /var/lib/tftpboot/install && sh install.sh

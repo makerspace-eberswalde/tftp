@@ -4,26 +4,26 @@ label preseed-thin-17.04-encrypted-no-partman
 	menu label ^Ubuntu Unity 17.04 ENCRYPTED NO PARTMAN (own user)
 	menu default
 	kernel distros/ubuntu-17.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin-encrypted-no-partman.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin-encrypted-no-partman.seed
 
 label preseed-thin-17.04-encrypted
 	menu label ^Ubuntu Unity 17.04 ENCRYPTED THIN (own user)
 	menu default
 	kernel distros/ubuntu-17.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin-encrypted.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin-encrypted.seed
 
 label preseed-thin-17.04-encrypted
 	menu label ^Ubuntu Unity 17.04 ENCRYPTED FAT (own user; wget, tree, curl, htop, git, mc )
 	menu default
 	kernel distros/ubuntu-17.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin-encrypted.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin-encrypted.seed
 
 
 label preseed-thin-16.04-live
 	menu label ^Ubuntu UNITY 16.04 LIVE
 	menu default
 	kernel distros/ubuntu-16.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin.seed
 
 
 MENU SEPARATOR
@@ -32,32 +32,32 @@ label preseed-thin-14.04
 	menu label ^Ubuntu UNITY 14.04 THIN (ohne vorinstallierte Software)
 	menu default
 	kernel distros/ubuntu-14.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin.seed
 label preseed-fat-14.04
 	menu label ^Ubuntu UNITY 14.04 FAT (mit vorinstallierter Software)
 	menu default
 	kernel distros/ubuntu-14.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-fat.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-14.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-fat.seed
 label preseed-thin-16.04
 	menu label ^Ubuntu UNITY 16.04 THIN (ohne vorinstallierte Software)
 	menu default
 	kernel distros/ubuntu-16.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin.seed
 label preseed-fat-16.04
 	menu label ^Ubuntu UNITY 16.04 FAT (mit vorinstallierter Software)
 	menu default
 	kernel distros/ubuntu-16.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-fat.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-fat.seed
 label preseed-thin-17.04
 	menu label ^Ubuntu UNITY 17.04 THIN (ohne vorinstallierte Software)
 	menu default
 	kernel distros/ubuntu-17.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-thin.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-thin.seed
 label preseed-fat-17.04
 	menu label ^Ubuntu UNITY 17.04 FAT (mit vorinstallierter Software)
 	menu default
 	kernel distros/ubuntu-17.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-unity-i386-fat.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-17.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-unity-i386-fat.seed
 MENU BEGIN Ubuntu UNITY 14.04 (manuelle Installation)
 	LABEL Previous
 	MENU LABEL Previous Menu

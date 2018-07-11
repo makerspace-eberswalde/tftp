@@ -4,10 +4,10 @@ label preseed-thin-16.04-i386
 	menu label ^Kbuntu 16.04 i386
 	menu default
 	kernel distros/ubuntu-16.04-i386/ubuntu-installer/i386/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-thin.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-i386/ubuntu-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-kbuntu-thin.seed
 
 label preseed-thin-16.04-amd64
 	menu label ^Kbuntu 16.04 amd64
 	menu default
 	kernel distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/linux
-	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/ubuntu-kbuntu-thin.seed
+	append auto=true priority=critical vga=788 initrd=distros/ubuntu-16.04-amd64/ubuntu-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/ubuntu-kbuntu-thin.seed

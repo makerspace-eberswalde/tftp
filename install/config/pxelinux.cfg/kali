@@ -4,7 +4,7 @@ LABEL kali-live
 MENU LABEL Kali Live Boot (2017.2, amd64)
 KERNEL distros/kali/kali-linux-2017.1-amd64/live/vmlinuz
 INITRD distros/kali/kali-linux-2017.1-amd64/live/initrd.img
-APPEND boot=live netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/kali/kali-linux-2017.1-amd64 noconfig=sudo username=root hostname=kali
+APPEND boot=live netboot=nfs nfsroot=ADAPT_IP_HERE:8080/var/lib/tftpboot/distros/kali/kali-linux-2017.1-amd64 noconfig=sudo username=root hostname=kali
 
 LABEL kali-install-netboot-manual-amd64
 	MENU label ^Install Manuell (2016.2, amd64)
@@ -14,7 +14,7 @@ LABEL kali-install-netboot-manual-amd64
 LABEL kali-install-netboot-unattended-amd64
 	MENU label ^Install Unattended (2016.2, amd64)
 	KERNEL distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/linux
-	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/kali-thin.seed
+	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-2016.2-amd64/debian-installer/amd64/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/kali-thin.seed
 
 LABEL kali-install-netboot-manual-i386
 	MENU label ^Install Manuell (2016.2, i386)
@@ -24,7 +24,7 @@ LABEL kali-install-netboot-manual-i386
 LABEL kali-install-netboot-unattended-i386
 	MENU label ^Install Unattended (2016.2, i386)
 	KERNEL distros/kali/netboot-kali-2016.2-i386/debian-installer/i386/linux
-	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-2016.2-i386/debian-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:80/tftp/preseeds/kali-thin.seed
+	APPEND auto=true priority=critical vga=788 initrd=distros/kali/netboot-kali-2016.2-i386/debian-installer/i386/initrd.gz url=http://ADAPT_IP_HERE:8080/preseeds/kali-thin.seed
 
 
 MENU SEPARATOR

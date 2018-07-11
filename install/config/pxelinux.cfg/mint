@@ -4,7 +4,7 @@ LABEL Linux-Mint-18.1-cinnamon-64bit
 MENU LABEL Linux-Mint-18.1 (CINNAMON 64bit) unattended (no ethernet connection)
 KERNEL distros/mint/linuxmint-18.1-cinnamon-64bit/casper/vmlinuz
 INITRD distros/mint/linuxmint-18.1-cinnamon-64bit/casper/initrd.lz
-APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-18.1-cinnamon-64bit url=http://ADAPT_IP_HERE:80/tftp/preseeds/mint.seed --
+APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-18.1-cinnamon-64bit url=http://ADAPT_IP_HERE:8080/preseeds/mint.seed --
 
 LABEL Linux-Mint-17.3-kde-64bit
 MENU LABEL [TODO] Linux-Mint-17.3 (KDE 64bit) manually (no ethernet connection)
@@ -16,16 +16,16 @@ LABEL Linux-Mint-17.3-kde-64bit
 MENU LABEL [TODO] Linux-Mint-17.3 (KDE 64bit) unattended
 KERNEL distros/mint/linuxmint-17.3-kde-64bit/casper/vmlinuz
 INITRD distros/mint/linuxmint-17.3-kde-64bit/casper/initrd.lz
-APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-17.3-kde-64bit url=http://ADAPT_IP_HERE:80/tftp/preseeds/mint.seed --
+APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-17.3-kde-64bit url=http://ADAPT_IP_HERE:8080/preseeds/mint.seed --
 
 LABEL Linux-Mint-17.2-mate-64bit
 MENU LABEL [TODO] Linux-Mint-17.2 (MATE 64bit)
 KERNEL distros/mint/linuxmint-17.2-mate-64bit/casper/vmlinuz
 INITRD distros/mint/linuxmint-17.2-mate-64bit/casper/initrd.lz
-APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-17.2-mate-64bit url=http://ADAPT_IP_HERE:80/tftp/preseeds/mint.seed --
+APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-17.2-mate-64bit url=http://ADAPT_IP_HERE:8080/preseeds/mint.seed --
 
 LABEL Linux-Mint-17.1-xfce-64bit
 MENU LABEL [TODO] Linux-Mint-17.1 (XFCE 64bit)
 KERNEL distros/mint/linuxmint-17.1-xfce-64bit/casper/vmlinuz
 INITRD distros/mint/linuxmint-17.1-xfce-64bit/casper/initrd.lz
-APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-17.1-xfce-64bit url=http://ADAPT_IP_HERE:80/tftp/preseeds/mint.seed --
+APPEND automatic-ubiquity boot=casper netboot=nfs nfsroot=ADAPT_IP_HERE:/var/lib/tftpboot/distros/mint/linuxmint-17.1-xfce-64bit url=http://ADAPT_IP_HERE:8080/preseeds/mint.seed --

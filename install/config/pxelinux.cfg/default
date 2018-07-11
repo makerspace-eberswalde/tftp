@@ -3,6 +3,17 @@ TIMEOUT 10000
 PROMPT 0
 DEFAULT _display/vesamenu.c32
 
+MENU BEGIN Ubuntu Server
+	LABEL Previous
+	MENU LABEL Previous Menu
+	TEXT HELP
+	Return to previous menu
+	ENDTEXT
+	MENU EXIT
+	MENU SEPARATOR
+    MENU INCLUDE distros/ubuntu-18.04-server/isolinux/isolinux.cfg
+                 distros/ubuntu-18.04-server/isolinux/isolinux.cfg
+MENU END
 MENU BEGIN Ubuntu Unity amd64 (Standard Ubuntu)
 	LABEL Previous
 	MENU LABEL Previous Menu
